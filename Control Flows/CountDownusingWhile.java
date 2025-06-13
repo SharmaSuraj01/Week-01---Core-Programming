@@ -9,7 +9,7 @@ public class CountDownusingWhile {
         
         while (counter >= 1) {
             System.out.println("Countdown: " + counter);
-            counter--; // Decrement the counter
+            counter--; 
         }
         
         System.out.println("Rocket launch!");
