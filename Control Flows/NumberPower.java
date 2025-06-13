@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PowerOfaNumber {
+public class NumberPower {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -10,9 +10,11 @@ public class PowerOfaNumber {
         int power = scanner.nextInt();
         
         int result = 1; 
+        int counter = 0; 
         
-        for (int i = 1; i <= power; i++) {
+        while (counter < power) {
             result *= number; 
+            counter++;
         }
         
         System.out.println(number + " raised to the power of " + power + " is: " + result);
