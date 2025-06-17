@@ -3,7 +3,7 @@ package Methods;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class NumberCheckerThree {
+public class NumberCheckerNew {
     public static int countDigits(int num) {
         return String.valueOf(num).length();
     }
