@@ -10,7 +10,7 @@ public class MatrixOperations {
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                matrix[i][j] = rand.nextInt(10); // Random values between 0-9
+                matrix[i][j] = rand.nextInt(10); 
             }
         }
         return matrix;
