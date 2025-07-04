@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class BookBuddy {
+public class Bookbuddy {
     ArrayList<String>books;
-        BookBuddy(){
+        Bookbuddy(){
             books=new ArrayList<>();
         }
         void addBook(String title,String author){
@@ -27,24 +27,27 @@ public class BookBuddy {
                 String[] temp=book.split("-");
                 if(temp.length>1&&temp[1].equals(author)){
                     ans.add(book);
+
                 }
             }
             return ans;
         }
         public String[] export(){
             return books.toArray(new String[0]);
+
         }
         void displayBook(){
             for(String book:books){
                 System.out.println(book);
             }
         }
+
     public static void main(String[] args) {
-        BookBuddy buddy=new BookBuddy();
+        Bookbuddy buddy=new Bookbuddy();
         buddy.addBook("let us c","James Gosling");
         buddy.addBook("mahabhart","maharshi vedvyas");
         buddy.addBook("indian","uttam kumar");
-        buddy.sortBook();
+//        buddy.sortBook();
         buddy.displayBook();
 
     }
